@@ -1,0 +1,35 @@
+.nav-menu__list {
+  list-style-type: none;
+  display: flex;
+  gap: 30px;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.link {
+  text-decoration: none;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: rgba(0, 0, 0, 0.87);
+  mix-blend-mode: normal;
+  opacity: 0.75;
+}
+
+.activeLink {
+  color: #2196F3;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 70%;
+    height: 2px;
+    background-color: #2196F3;
+    margin-top: 5px;
+  }
+}
